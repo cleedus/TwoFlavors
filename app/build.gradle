@@ -14,6 +14,8 @@ buildscript {
 android {
     compileSdkVersion 28
     buildToolsVersion '28.0.3'
+    flavorDimensions "default"
+
 
     defaultConfig {
         applicationId "com.udacity.gradle.builditbigger"
@@ -25,12 +27,22 @@ android {
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    flavorDimensions "type"
+    productFlavors {
+        free {
+            dimension "type"
+        }
+        paid {
+            dimension "type"
+        }
+    }
 
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+
     }
 }
 
