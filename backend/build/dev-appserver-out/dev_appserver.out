@@ -25,3 +25,8 @@ Nov 25, 2018 1:30:21 PM com.google.appengine.repackaged.com.google.protobuf.Unsa
 WARNING: platform method missing - proto runtime falling back to safer methods: java.security.AccessControlException: access denied ("java.lang.RuntimePermission" "accessClassInPackage.sun.misc")
 Nov 25, 2018 1:30:25 PM com.google.appengine.tools.development.LocalResourceFileServlet doGet
 WARNING: No file found for: /favicon.ico
+Nov 25, 2018 1:59:37 PM com.google.appengine.tools.development.AbstractModule shutdown
+Shutting down.
+INFO: Shutting down module instance default
+Nov 25, 2018 1:59:37 PM com.google.appengine.api.datastore.dev.LocalDatastoreService cleanupActiveServices
+INFO: scheduler shutting down.
