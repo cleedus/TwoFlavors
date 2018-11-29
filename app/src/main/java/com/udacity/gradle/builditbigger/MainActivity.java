@@ -6,12 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
-
-import com.example.jokedisplay.JokeActivity;
-import com.example.jokesource.JokeProvider;
-
-
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -44,12 +38,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellJoke(View view) {
-        JokeProvider jokeProvider = new JokeProvider();
-        //jokeProvider.setJoke("today is not today");
-        //Toast.makeText(this, jokeProvider.getJoke(), Toast.LENGTH_SHORT).show();
-       /* Intent intent = new Intent(this, JokeActivity.class);
-        intent.putExtra(JokeActivity.JOKE_KEY, jokeProvider.getJoke());
-        startActivity(intent);*/
 
        EndpointsAsyncTask endpointsAsyncTask = new EndpointsAsyncTask();
        endpointsAsyncTask.execute(this);

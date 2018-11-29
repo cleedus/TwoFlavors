@@ -3,6 +3,7 @@ package com.udacity.gradle.builditbigger;
 import android.content.Context;
 import android.content.Intent;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import com.example.jokedisplay.JokeActivity;
 import com.google.api.client.extensions.android.http.AndroidHttp;
@@ -43,7 +44,7 @@ public class EndpointsAsyncTask extends AsyncTask<Context,Void, String> {
         try {
             return myApiService.getJokes().execute().getData();
         } catch (IOException e) {
-            return e.getMessage();
+            return null;
         }
     }
 
